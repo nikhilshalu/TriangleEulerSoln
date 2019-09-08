@@ -47,14 +47,13 @@ Program flow
 **********************
 Solution modular and diverse:
 **********************
-This solution is fairly divers in that it could be extended to 
+This solution is fairly diverse in that it could be extended to 
 		find the maximum path in any of the triangle.  
 
 **********************
 Performance:
 **********************
-Without caching, the complexity of this algorithm (average and worst-case) is O(2^N), where N = the height of the tree.  The  caching mechanism is implemented to stop the traversal of all suboptimal paths at level L as soon as all optimal paths for L are found. This will reduce the complexity to a little more than 
-		O(N^2)
+Without caching, the complexity of this algorithm (average and worst-case) is O(N^2), where N = the height of the tree.  The  caching mechanism is implemented to stop the traversal of all suboptimal paths at level L as soon as all optimal paths for L are found.The invalid path is compared so to reduce the complexity.
 
 **********************
 Memory Footprint: 
